@@ -5,6 +5,8 @@
 #define ANTI_VIRTUAL_MACHINE
 #define ANTI_DEBUGGING
 
+#define FIND_WINDOW
+
 BOOL CheckForVMArtefacts(VOID);
 BOOL CheckForDebuggers(VOID);
 
