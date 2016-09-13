@@ -1,0 +1,4 @@
+﻿  anti.cpp
+c:\users\diep\documents\visual studio 2015\projects\trojan\trojan\anti.cpp(9): warning C4716: 'CheckForVMArtefacts': must return a value
+  Trojan.vcxproj -> c:\users\diep\documents\visual studio 2015\Projects\Trojan\Debug\Trojan.exe
+  Trojan.vcxproj -> c:\users\diep\documents\visual studio 2015\Projects\Trojan\Debug\Trojan.pdb (Full PDB)
