@@ -201,14 +201,14 @@ static BOOL MyIsDebuggerPresent(VOID) {
 	/*
 		PPEB peb = (PPEB)__readfsdword(0x30);
 		return peb->BeingDebugged;
-	*/
 	__asm {
 		mov eax, fs:[0x30]
 		movzx eax, [eax + 0x2]
 		mov bRet, eax
 	}
+	*/
 
-	return bRet;
+	return *(LPBYTE)(__readfsdword(0x30) + 0x2);
 }
 
 /*
@@ -219,11 +219,14 @@ static BOOL MyIsDebuggerPresent(VOID) {
 static BOOL CheckNtGlobalFlag(VOID) {
 	DWORD dwFlag = 0;
 
+	/*
 	__asm {
 		mov eax, fs:[0x30]
 		mov eax, [eax + 0x68]
 		mov dwFlag, eax
 	}
+	*/
+	dwFlag = *(LPDWORD)(__readfsdword(0x30) + 0x68);
 
 /*
 	FLG_HEAP_ENABLE_TAIL_CHECK | 
@@ -485,7 +488,7 @@ BOOL CheckForDebuggers(VOID) {
 	// heap flags
 
 	// OutputDebugString
-	if ((IsWindowsXPOrGreater() || IsWindowsXPSP1OrGreater || IsWindowsXPSP2OrGreater() || IsWindowsXPSP3OrGreater) && !IsWindowsVistaOrGreater()) {
+	if ((IsWindowsXPOrGreater() || IsWindowsXPSP1OrGreater() || IsWindowsXPSP2OrGreater() || IsWindowsXPSP3OrGreater()) && !IsWindowsVistaOrGreater()) {
 		bResult |= MyOutputDebugString();
 	}
 
