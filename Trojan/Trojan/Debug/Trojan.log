@@ -1,4 +1,9 @@
-﻿  anti.cpp
-c:\users\diep\documents\visual studio 2015\projects\trojan\trojan\anti.cpp(9): warning C4716: 'CheckForVMArtefacts': must return a value
-  Trojan.vcxproj -> c:\users\diep\documents\visual studio 2015\Projects\Trojan\Debug\Trojan.exe
-  Trojan.vcxproj -> c:\users\diep\documents\visual studio 2015\Projects\Trojan\Debug\Trojan.pdb (Full PDB)
+﻿  main.cpp
+c:\users\diep\documents\visual studio 2015\projects\trojan\trojan\main.cpp(29): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: see declaration of 'vsprintf'
+  anti.cpp
+c:\users\diep\documents\visual studio 2015\projects\trojan\trojan\anti.cpp(126): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+  Generating Code...
+  Trojan.vcxproj -> C:\Users\Diep\Documents\Visual Studio 2015\Projects\Trojan\Debug\Trojan.exe
+  Trojan.vcxproj -> C:\Users\Diep\Documents\Visual Studio 2015\Projects\Trojan\Debug\Trojan.pdb (Full PDB)

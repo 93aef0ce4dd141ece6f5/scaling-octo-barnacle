@@ -2,12 +2,12 @@
 #ifndef ANTI_H
 #define ANTI_H
 
-#define ANTI_VIRTUAL_MACHINE
-#define ANTI_DEBUGGING
+#define ANTI_VIRTUALIZATION
+//#define ANTI_DEBUGGING
 
-#define FIND_WINDOW
+#define FIND_DEBUG_WINDOW_NAMES
 
-BOOL CheckForVMArtefacts(VOID);
+BOOL CheckForVirtualization(VOID);
 BOOL CheckForDebuggers(VOID);
 
 #endif // !ANTI_H

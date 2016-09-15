@@ -21,18 +21,12 @@
     <ClCompile Include="anti.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="peb.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="anti.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="peb.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
